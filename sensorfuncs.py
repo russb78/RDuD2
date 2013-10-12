@@ -26,22 +26,30 @@ def front_bump():   # check for bump, if bump detected return 1
     bump = Arduino.analogRead(FrontBump)
     if bump > frontTrigger:
         return True
+    else:
+        return False
 
 def right_bump():
-    right = Arduino.analogRead(RightBump)
+    bump = Arduino.analogRead(RightBump)
     if bump > sideTrigger:
         return True
-
+    else:
+        return False
+    
 def left_bump():
-    left = Arduino.analogRead(LeftBump)
+    bump = Arduino.analogRead(LeftBump)
     if bump > sideTrigger:
         return True
-
+    else:
+        return False
+    
 def rear_bump():
-    rear = Arduino.analogRead(RearBump)
+    bump = Arduino.analogRead(RearBump)
     if bump > rearTrigger:
         return True
-
+    else:
+        return False
+    
 def read_sensors():
     """
     Reads each of the Sharp sensors are returns a list of analog readings
