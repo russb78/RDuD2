@@ -69,7 +69,7 @@ def tilt_down():
     next_pos = get_tilt() - 2
     tilt_servo.write(next_pos)
     if get_tilt() > tilt_low:
-        tilt_up()
+        tilt_down()
 
 #########
 
@@ -78,6 +78,6 @@ try:
     sleep(0.5)
     pan_left()
     sleep(0.5)
-    set_home()
+    set_home()su
 except KeyboardInterrupt:
     quit()
