@@ -46,7 +46,7 @@ def main():
                     print reading
                     ### Avoider code ends above ###
         except KeyboardInterrupt:
-            close_pins()0
+            close_pins()
             print "\nExiting"
             quit()
 
