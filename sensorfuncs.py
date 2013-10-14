@@ -15,9 +15,9 @@ for pins in (FrontBump, RightBump, LeftBump,RearBump):
     Arduino.pinMode(pins, Arduino.INPUT)
 
 # define the threshold at which bump events are detected 
-frontTrigger = 350
-sideTrigger = 350
-rearTrigger = 350
+frontTrigger = 300
+sideTrigger = 300
+rearTrigger = 300
 
 #print sensor readings while true
 DEBUG = False
