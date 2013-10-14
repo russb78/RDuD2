@@ -9,6 +9,9 @@ The code supplied works best with a frindo.org robot platform using three Sharp 
 
 See the motorfuncs and sensorfuncs files for details on the example set-up. 
 
+The original RobotShield Arduino library was written by Jonathan Luke of RobotBits.co.uk and was released into the public domain.
+
+
 Usage
 =====
 
