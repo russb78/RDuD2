@@ -13,9 +13,10 @@ Usage
 =====
 
 This project uses:
-Nanpy, an Arduino Firmata project and is a strict requirement.
 
-A Raspberry Pi with Raspbian 
+Nanpy, an Arduino Firmata project (and is a strict requirement).
+
+A Raspberry Pi with Raspbian installed.
 
 A frindo.org robot platform (inc. Arduino and sensors)
 
