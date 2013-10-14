@@ -10,6 +10,9 @@ from time import sleep
 pan_servo = Servo(2) # pan servo is on digital pin 2
 tilt_servo = Servo(3) # tilt servo is on digital pin 3
 
+# Enter debug mode to quickly test servo functions
+DEBUG == False
+
 ### CONSTANTS ###
 
 # tilt range contrain between 50-179
@@ -77,11 +80,12 @@ def tilt_down():
 
 #########
 
-try:
-    pan_right()
-    sleep(0.5)
-    pan_left()
-    sleep(0.5)
-    set_home()
-except KeyboardInterrupt:
-    quit()
+if DEBUG:
+    try:
+        pan_right()
+        sleep(0.5)
+        pan_left()
+        sleep(0.5)
+        set_home()
+    except KeyboardInterrupt:
+        quit()
