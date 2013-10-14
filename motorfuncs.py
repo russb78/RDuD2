@@ -25,8 +25,7 @@ def stop():
 
 def forward(dist, vel):
     """
-    Move forward for dist (time) at vel (motor speed),
-    then stop the motors
+    Move forward for dist (time) at vel (motor speed)
     """
     Arduino.digitalWrite(dirA, Arduino.HIGH)
     Arduino.digitalWrite(dirB, Arduino.HIGH)
@@ -34,13 +33,9 @@ def forward(dist, vel):
     Arduino.analogWrite(speedB, vel)
     Arduino.delay(dist)
 
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-
 def reverse(dist, vel):
     """
-    Move backwards for dist (time) at vel (motor speed),
-    then stop the motors
+    Move backwards for dist (time) at vel (motor speed)
     """
     Arduino.digitalWrite(dirA, Arduino.LOW)
     Arduino.digitalWrite(dirB, Arduino.LOW)
@@ -48,22 +43,15 @@ def reverse(dist, vel):
     Arduino.analogWrite(speedB, vel)
     Arduino.delay(dist)
 
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-
 def rot_cw(angle, vel):
     """
-    Turns to the right according to angle (delay),
-    then stops the motors
+    Turns to the right according to angle (delay)
     """
     Arduino.digitalWrite(dirA, Arduino.LOW)
     Arduino.digitalWrite(dirB, Arduino.HIGH)
     Arduino.analogWrite(speedA, vel)
     Arduino.analogWrite(speedB, vel)
     Arduino.delay(angle)
-
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-    Arduino.digitalWrite(speedA, Arduino.LOW)
 
 def rot_ccw(angle, vel):
     """
@@ -76,13 +64,9 @@ def rot_ccw(angle, vel):
     Arduino.analogWrite(speedB, vel)
     Arduino.delay(angle)
 
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-
 def turn_right(angle, vel):
     """
-    Turns to the right according to angle (delay),
-    then stops the motors
+    Turns to the right according to angle (delay)
     """
     Arduino.digitalWrite(dirA, Arduino.LOW)
     Arduino.digitalWrite(dirB, Arduino.HIGH)
@@ -90,13 +74,9 @@ def turn_right(angle, vel):
     Arduino.analogWrite(speedB, vel)
     Arduino.delay(angle)
 
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-
 def turn_left(angle, vel):
     """
-    Turns to the left according to angle (delay),
-    then stops the motors
+    Turns to the left according to angle (delay)
     """
     Arduino.digitalWrite(dirA, Arduino.HIGH)
     Arduino.digitalWrite(dirB, Arduino.LOW)
@@ -104,15 +84,12 @@ def turn_left(angle, vel):
     Arduino.analogWrite(speedB, Arduino.LOW)
     Arduino.delay(angle)
 
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-    Arduino.digitalWrite(speedA, Arduino.LOW)
-
 def go(vel):
     """
     Start the motors and keep them running until told otherwise
     """
     Arduino.digitalWrite(dirA, Arduino.HIGH)
-    Arduino.digitalWrite(dirB, Arduino.LOW)
+    Arduino.digitalWrite(dirB, Arduino.HIGH)
     Arduino.analogWrite(speedA, vel)
     Arduino.analogWrite(speedB, vel)
 
