@@ -12,9 +12,9 @@ lock = 5
 Arduino.pinMode(lock, Arduino.INPUT)
 
 def debug():
-"""
-If lock switch is in the locked position stop motors and give sensor feedback instead
-"""
+    """
+    If lock switch is in the locked position stop motors and give sensor feedback instead
+    """
     stop()
     reading = read_sensors()
     Arduino.delay(5)
