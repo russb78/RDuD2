@@ -9,6 +9,7 @@ from time import sleep
 from modules.motorfuncs import *
 from modules.sensorfuncs import *
 from modules.servofuncs import *
+from modules.helperfuncs import *
 
 lock = 5
 
