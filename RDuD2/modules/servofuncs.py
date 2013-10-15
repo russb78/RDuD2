@@ -13,7 +13,7 @@ tilt_servo = Servo(3) # tilt servo is on digital pin 3
 # Enter debug mode to quickly test servo functions
 DEBUG = False
 
-### CONSTANTS ###
+### SERVO CONSTANTS ###
 
 # tilt range contrain between 50-179
 low_tilt = 50 # lowest position

@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # Avoider sketch for Nanpy-controlled frindo bot
 # Russell Barnes - 02 Oct 2013
+
 from nanpy import Arduino
+from nanpy import Servo
 from time import sleep
 
 from modules.motorfuncs import *
 from modules.sensorfuncs import *
+from modules.servofuncs import *
 
 lock = 5
 

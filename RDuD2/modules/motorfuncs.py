@@ -92,12 +92,3 @@ def go(vel):
     Arduino.digitalWrite(dirB, Arduino.HIGH)
     Arduino.analogWrite(speedA, vel)
     Arduino.analogWrite(speedB, vel)
-
-def close_pins():
-    """
-    Close pins to quit cleanly upon end or exception
-    """
-    Arduino.analogWrite(speedA, Arduino.LOW)
-    Arduino.analogWrite(speedB, Arduino.LOW)
-    Arduino.digitalWrite(dirA, Arduino.LOW)
-    Arduino.digitalWrite(dirB,Arduino.LOW)
