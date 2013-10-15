@@ -4,8 +4,8 @@
 from nanpy import Arduino
 from time import sleep
 
-from motorfuncs import *
-from sensorfuncs import *
+from modules.motorfuncs import *
+from modules.sensorfuncs import *
 
 lock = 5
 
